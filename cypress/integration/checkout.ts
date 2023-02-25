@@ -5,23 +5,7 @@ let loginPage = new LoginPage()
 let dashboardPage = new DashboardPage()
 const URL = 'https://www.saucedemo.com/'
 
-// it('Test LOGIN', () => {
-//     loginPage.login(URL,'standard_user','secret_sauce')
-//     loginPage.assertLogin() 
-// })
-
-// it('Test Sauce Demo Invalid Password', () => {
-//     loginPage.login(URL,'standard_user','invalidPass')
-//     loginPage.assertLoginFail()
-// })
-
-// it('Test Sauce Demo Sauce labs product backpack', () => {
-//     loginPage.login(URL,'standard_user','secret_sauce')
-//     loginPage.assertLogin()
-//     dashboardPage.sauceLabsBackpack() 
-// })
-
-it('Test Sauce Demo Sauce labs checkout sauce labs backpack', () => {
+it('Test Sauce Demo Sauce labs checkout sauce labs backpack success', () => {
     loginPage.login(URL,'standard_user','secret_sauce')
     loginPage.assertLogin()
     dashboardPage.addToCart()
@@ -32,4 +16,12 @@ it('Test Sauce Demo Sauce labs checkout sauce labs backpack', () => {
     dashboardPage.inputZipCode()
     dashboardPage.clickContinue()
     dashboardPage.clickfnish()
+})
+it('Test Sauce Demo Sauce labs checkout sauce labs backpack failed', () => {
+    loginPage.login(URL,'standard_user','secret_sauce')
+    loginPage.assertLogin()
+    dashboardPage.addToCart()
+    dashboardPage.shoppingcart()
+    dashboardPage.clickcheckout()
+    dashboardPage.clickcontinuegagal()
 })

@@ -1,0 +1,87 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-02-25T19:32:00.812Z",
+    "end": "2023-02-25T19:32:13.387Z",
+    "duration": 12575,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "de532b39-4a7f-4003-a2f9-134203214f11",
+      "title": "",
+      "fullFile": "cypress/integration/dashboard.ts",
+      "file": "cypress/integration/dashboard.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Test Sauce Demo Sauce labs checkout sauce labs backpack",
+          "fullTitle": "Test Sauce Demo Sauce labs checkout sauce labs backpack",
+          "timedOut": null,
+          "duration": 7791,
+          "state": "passed",
+          "speed": "medium",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "loginPage.login(URL, 'standard_user', 'secret_sauce');\nloginPage.assertLogin();\ndashboardPage.addToCart();\ndashboardPage.shoppingcart();\ndashboardPage.clickcheckout();\ndashboardPage.inputFirstName();\ndashboardPage.inputLastName();\ndashboardPage.inputZipCode();\ndashboardPage.clickContinue();\ndashboardPage.clickfnish();",
+          "err": {},
+          "uuid": "046e8957-b71c-46ff-9906-38151e88e263",
+          "parentUUID": "de532b39-4a7f-4003-a2f9-134203214f11",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "046e8957-b71c-46ff-9906-38151e88e263"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 7791,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "chart": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
